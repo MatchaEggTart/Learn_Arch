@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=WeChat
+Exec=/opt/tencent/wechat/WeChatLinux_x86_64.AppImage %U --no-sandbox
+Terminal=false
+Type=Application
+Icon=/opt/tencent/wechat/icons/wechat.png
+StartupWMClass=wechat
+Comment=Tencent WeChat
+Categories=Chat
