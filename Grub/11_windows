@@ -5,10 +5,18 @@ exec tail -n +3 $0
 # the 'exec tail' line above.
 
 # grub-mkconfig -o /boot/grub/grub.cfg
+# menuentry 'Microsoft Windows 11' {
+#     insmod part_gpt
+#     insmod fat
+#     insmod chain
+#     search --fs-uuid --no-floppy --set=root 5811de17-c86e-4c00-8f04-bb614c67516c # 获取UUID，使用 sudo blkid | grep "EFI"
+#     chainloader (${root})/EFI/Microsoft/Boot/bootmgfw.efi
+# }
+
 menuentry 'Microsoft Windows 11' {
     insmod part_gpt
     insmod fat
     insmod chain
-    search --fs-uuid --no-floppy --set=root 6855-C889 # 获取UUID，使用 sudo blkid | grep "EFI"
-    chainloader (${root})/EFI/Microsoft/Boot/bootmgfw.efi
+    search --fs-uuid --no-floppy --set=root A0DD-1BC9  # 使用 FAT 分区的 UUID
+    chainloader /EFI/Microsoft/Boot/bootmgfw.efi  # 修正路径格式
 }
