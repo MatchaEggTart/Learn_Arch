@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Proxy Chrome
-Exec=proxy-ns google-chrome-stable
+Exec=proxy-ns sh -c "export LANGUAGE=ZH-CN.UTF-8 && /usr/bin/google-chrome-stable %U"
 Terminal=false
 Type=Application
 Icon=/usr/share/icons/proxy-chrome.png

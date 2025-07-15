@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Private Chrome
-Exec=proxy-ns google-chrome-stable --incognito
+Exec=proxy-ns sh -c "export LANGUAGE=ZH-CN.UTF-8 && /usr/bin/google-chrome-stable --incognito %U"
 Terminal=false
 Type=Application
 Icon=/usr/share/icons/private-chrome.png
