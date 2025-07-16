@@ -17,6 +17,6 @@ menuentry 'Microsoft Windows 11' {
     insmod part_gpt
     insmod fat
     insmod chain
-    search --fs-uuid --no-floppy --set=root C372-730D  # 使用 FAT 分区的 UUID
+    search --fs-uuid --no-floppy --set=root C372-730D  # sudo blkid | grep -E "EFI|vfat"
     chainloader /EFI/Microsoft/Boot/bootmgfw.efi  # 修正路径格式
 }
