@@ -1,1 +1,1 @@
-paru -Syy microsoft-edge-beta
+paru -Syy microsoft-edge-stable
