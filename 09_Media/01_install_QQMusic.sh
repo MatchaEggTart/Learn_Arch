@@ -13,6 +13,8 @@ check_install() {
 
 check_install fuse
 
+dir=$(cd $(dirname $0); pwd -P)
+
 if [ $? -eq 0 ]; then
     :
 else
@@ -30,7 +32,7 @@ if [ -f "$HOME/Downloads/qqmusic-1.1.7.AppImage" ]; then
 
     sudo cp qqmusic-1.1.7.AppImage /opt/tencent/qqmusic
 
-    cd $HOME/Workspace/Learn_Arch/09_Media/QQMusic/
+    cd $dir/QQMusic/
 
     if [ -d "$HOME/.local/share/applications" ]; then
         :
@@ -38,9 +40,9 @@ if [ -f "$HOME/Downloads/qqmusic-1.1.7.AppImage" ]; then
         mkdir -p $HOME/.local/share/applications
     fi
 
-    cp $HOME/Workspace/Learn_Arch/09_Media/QQMusic/qqmusic.desktop $HOME/.local/share/applications
+    cp $dir/QQMusic/qqmusic.desktop $HOME/.local/share/applications
 
-    sudo cp -r $HOME/Workspace/Learn_Arch/09_Media/QQMusic/icons/qqmusic.png /opt/tencent/qqmusic/icons/
+    sudo cp -r $dir/QQMusic/icons/qqmusic.png /opt/tencent/qqmusic/icons/
 
     cd /opt/tencent/qqmusic/
 
