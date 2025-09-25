@@ -16,5 +16,6 @@ sudo pacman -S fcitx5 fcitx5-im fcitx5-chinese-addons fcitx5-rime rime-luna-piny
 
 # echo -e "# Fcitx 5" | sudo tee -a $PATH_PROFILE
 # echo -e "export XMODIFIERS=@im=fcitx" | sudo tee -a $PATH_PROFILE
+
 # KDE 是 写入 export XMODIFIERS=@im=fcitx 到 /etc/profile ?
-# Hyprland 是 写入 XMODIFIERS=@im=fcitx 到 /etc/environment 
+# Hyprland 是 写入 XMODIFIERS=@im=fcitx 到 /etc/environment
