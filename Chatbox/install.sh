@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 dir=$(cd $(dirname $0); pwd -P)
 
-chmod +x $HOME/Downloads/Chatbox-1.15.4-x86_64.AppImage
+chmod +x $HOME/Downloads/Chatbox-1.16.3-x86_64.AppImage
 
 sudo mkdir -p /opt/google/chatbox/icons
 
 sudo cp $dir/chatbox.png /opt/google/chatbox/icons
 
-sudo cp $HOME/Downloads/Chatbox-1.15.4-x86_64.AppImage /opt/google/chatbox/
+sudo cp $HOME/Downloads/Chatbox-1.16.3-x86_64.AppImage /opt/google/chatbox/
 
 cp $dir/xyz.chatboxapp.app.desktop $HOME/.local/share/applications/xyz.chatboxapp.app.desktop 
 

@@ -23,14 +23,14 @@ fi
 
 cd $HOME/Downloads
 
-# wget https://dldir1.qq.com/music/clntupate/linux/AppImage/qqmusic-1.1.7.AppImage
+# wget https://dldir1.qq.com/music/clntupate/linux/AppImage/qqmusic-1.1.8.AppImage
 
-if [ -f "$HOME/Downloads/qqmusic-1.1.7.AppImage" ]; then
+if [ -f "$HOME/Downloads/qqmusic-1.1.8.AppImage" ]; then
     cd $HOME/Downloads
 
     sudo mkdir -p /opt/tencent/qqmusic/icons
 
-    sudo cp qqmusic-1.1.7.AppImage /opt/tencent/qqmusic
+    sudo cp qqmusic-1.1.8.AppImage /opt/tencent/qqmusic
 
     cd $dir/QQMusic/
 
@@ -46,7 +46,7 @@ if [ -f "$HOME/Downloads/qqmusic-1.1.7.AppImage" ]; then
 
     cd /opt/tencent/qqmusic/
 
-    sudo chmod +x qqmusic-1.1.7.AppImage
+    sudo chmod +x qqmusic-1.1.8.AppImage
 
 else
     echo "Download the qqmusic => ERROR"
