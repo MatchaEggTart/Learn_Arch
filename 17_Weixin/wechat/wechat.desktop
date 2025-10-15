@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=WeChat
+# Exec=/opt/tencent/wechat/WeChatLinux_x86_64.AppImage %U --no-sandbox
+Exec=env GTK_IM_MODULE=fcitx QT_IM_MODULE=fcitx QT_IM_MODULE=fcitx XMODIFIERS=@im=fcitx @INSTALL_DIR@/@APPIMAGE_FILE@ %U --no-sandbox
+Icon=@ICON_PATH@
+Terminal=false
+Type=Application
+StartupWMClass=wechat
+Comment=Tencent WeChat
+Categories=Network;InstantMessaging;

@@ -1,0 +1,22 @@
+#!/bin/sh
+exec tail -n +3 $0
+# This file provides an easy way to add custom menu entries.  Simply type the
+# menu entries you want to add after this comment.  Be careful not to change
+# the 'exec tail' line above.
+
+# grub-mkconfig -o /boot/grub/grub.cfg
+# menuentry 'Microsoft Windows 11' {
+#     insmod part_gpt
+#     insmod fat
+#     insmod chain
+#     search --fs-uuid --no-floppy --set=root 5811de17-c86e-4c00-8f04-bb614c67516c # 获取UUID，使用 sudo blkid | grep "EFI"
+#     chainloader (${root})/EFI/Microsoft/Boot/bootmgfw.efi
+# }
+
+menuentry 'Microsoft Windows 11' {
+    insmod part_gpt
+    insmod fat
+    insmod chain
+    search --fs-uuid --no-floppy --set=root 4641-5B0B # sudo blkid | grep -E "EFI|vfat"
+    chainloader /EFI/Microsoft/Boot/bootmgfw.efi  # 修正路径格式
+}

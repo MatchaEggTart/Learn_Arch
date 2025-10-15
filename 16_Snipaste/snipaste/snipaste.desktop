@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Snipaste
+Exec=@INSTALL_DIR@/@APPIMAGE_FILE@ %U --no-sandbox
+Icon=@ICON_PATH@
+Comment=Screenshot and annotation tool
+Terminal=false
+Type=Application
+Categories=Utility;Graphics;
+StartupWMClass=snipaste
+Keywords=screenshot;annotation;snip;

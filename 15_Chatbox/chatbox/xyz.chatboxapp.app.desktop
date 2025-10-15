@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Chatbox
+Exec=@INSTALL_DIR@/@APPIMAGE_FILE@ %U --no-sandbox
+Icon=@ICON_PATH@
+Terminal=false
+Type=Application
+StartupWMClass=chatbox
+Comment=Chatbox
+Categories=Network;InstantMessaging;

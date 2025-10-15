@@ -1,0 +1,4 @@
+先进入 Grub界面，使用c => videoinfo 看看有什么分辨率
+/etc/default/grub
+GRUB_GFXMODE=1024x768x32,auto
+# sudo grub-mkconfig -o /boot/grub/grub.cfg
