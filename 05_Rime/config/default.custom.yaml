@@ -1,0 +1,28 @@
+patch:
+  "menu/page_size": 7
+  key_binder:
+    bindings:
+      - { when: paging, accept: comma, send: Page_Up } # 候选词分页
+      - { when: has_menu, accept: period, send: Page_Down } # 候选词分页
+      # - { when: composing, accept: Control + x, send: clear }
+      # - { when: always, accept: Control+x, toggle: ascii_mode }          # 切换中英
+
+  ascii_composer/good_old_caps_lock: true
+
+  ascii_composer/switch_key:
+    # Caps_Lock: clear       # noop是在告诉Caps_Lock键失效
+    Caps_Lock: commit_code
+    # Caps_Lock: inline_ascii
+    Shift_L: commit_code
+    Shift_R: inline_ascii
+    # Control_L: clear      # 输入一段字符后按此键，字符被清除，同时RIME输入状态切换为英文输入。
+    # Control_R: commit_text    # 按此键，文字上屏，同时RIME切换为英文输入
+    Control_L: noop
+    Control_R: noop
+
+  # 仅使用「雾凇拼音」的默认配置，配置此行即可
+  __include: rime_ice_suggestion:/
+
+  # 输入法列表
+  schema_list:
+    - schema: rime_ice
