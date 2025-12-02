@@ -1,7 +1,8 @@
 #!/bin/bash
 
 mkdir ~/.local/share/fcitx5/rime/
-sudo pacman -S fcitx5 fcitx5-im fcitx5-chinese-addons fcitx5-rime
+# sudo pacman -S fcitx5 fcitx5-im fcitx5-chinese-addons fcitx5-rime
+sudo pacman -S fcitx5 fcitx5-im fcitx5-rime
 paru -S rime-ice-git
 
 # Fcitx5
