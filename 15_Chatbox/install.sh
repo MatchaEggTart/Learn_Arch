@@ -21,7 +21,7 @@ if ! check_install fuse; then
 fi
 
 # 定义资源文件位置
-appimage_source="Chatbox-1.18.1-x86_64.AppImage"
+appimage_source="Chatbox-1.18.2-x86_64.AppImage"
 appimage_company="google"
 appimage_name="chatbox"
 desktop_file="${script_dir}/$appimage_name/xyz.chatboxapp.app.desktop"
