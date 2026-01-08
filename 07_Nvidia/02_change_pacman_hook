@@ -8,8 +8,7 @@ Type=Package
 Target=nvidia
 Target=linux
 # Change the linux part above and in the Exec line if a different kernel is used
-# 如果使用不同的内核，请更改上面的 linux 部分和 Exec 行中的内容，例如更改为Target=nvidia-open
-
+# 如果使用不同的内核，请更改上面的 linux 部分和 Exec 行中的内容
 [Action]
 Description=Updating Nvidia module in initcpio
 Depends=mkinitcpio
