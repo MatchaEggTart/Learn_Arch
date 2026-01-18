@@ -1,0 +1,1 @@
+paru -S open-webui
