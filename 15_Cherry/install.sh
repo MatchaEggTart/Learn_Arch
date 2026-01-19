@@ -22,13 +22,13 @@ fi
 
 # 定义资源文件位置
 appimage_source="Cherry-Studio-1.7.13-x86_64.AppImage"
-appimage_company="google"
+# appimage_company="google"
 appimage_name="cherry-studio"
 desktop_file="${script_dir}/$appimage_name/cherry-studio.desktop"
 icon_file="${script_dir}/$appimage_name/icons/cherry-studio.png"
 install_dir="/opt/$appimage_name"
 desktop_dir="$HOME/.local/share/applications/cherry-studio.desktop"
-icon_dir="$install_dir/icons/cherry-studio.desktop"
+icon_dir="$install_dir/icons/cherry-studio.png"
 
 # 查找AppImage文件
 find_appimage() {
@@ -97,4 +97,3 @@ fi
 # # /opt/google/chatbox/Chatbox-1.9.3-x86_64.AppImage
 # # /opt/google/chatbox/icons/chatbox.png
 #
-
