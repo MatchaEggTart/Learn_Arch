@@ -21,7 +21,7 @@ if ! check_install fuse; then
 fi
 
 # 定义资源文件位置
-appimage_source="Cherry-Studio-1.7.13-x86_64.AppImage"
+appimage_source="Cherry-Studio-1.7.15-x86_64.AppImage"
 # appimage_company="google"
 appimage_name="cherry-studio"
 desktop_file="${script_dir}/$appimage_name/cherry-studio.desktop"
