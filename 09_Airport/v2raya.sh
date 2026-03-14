@@ -6,7 +6,7 @@ paru -S v2raya
 # 设置端口号： 在设置对话框左下角点击 地址和端口 按钮， 设置 socks5 端口（带分流规则） 为 1080, 并重启 v2raya 服务 sudo systemctl restart v2raya.service
 sudo systemctl enable v2raya.service
 
-paru -S proxy-ns
+# paru -S proxy-ns
 
 # 以 Emacs 为例, 找到 /usr/share/applications/emacs.desktop 中 Exec 字段， 在字段开头加上 proxy-ns 后， Emacs 启动后就会自动应用代理网络， 包括 Emacs 里启动的所有子进程。 这样就不用为 Emacs 下的各种工具配置代理了， 非常省心。
 
