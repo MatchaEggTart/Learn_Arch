@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Hiddify
+Exec="/opt/hiddify/Hiddify-Linux-x64-AppImage.AppImage"
+Icon=hiddify
+Terminal=false
+StartupWMClass=app.hiddify.com
+Comment=Hiddify
+Categories=Network;
