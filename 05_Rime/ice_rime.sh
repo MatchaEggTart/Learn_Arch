@@ -24,7 +24,7 @@ paru -S rime-ice-git
 
 # # Fcitx5
 # XMODIFIERS=@im=fcitx
-# SDL_IM_MODULE=fcitx
+# # SDL_IM_MODULE=fcitx
 # # GLFW_IM_MODULE=ibus  # 注意：Kitty有时需要这个来触发输入框架
 
 # ~/.config/gtk-3.0/settings.ini
