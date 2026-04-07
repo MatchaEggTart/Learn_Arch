@@ -106,7 +106,7 @@ Comment[zh_CN]=访问互联网
 Comment[zh_HK]=連線到網際網路
 Comment[zh_TW]=連線到網際網路
 StartupWMClass=Google-chrome
-Exec=proxy-ns /usr/bin/google-chrome-stable --enable-wayland-ime --wayland-text-input-version=1 %U
+Exec=/usr/bin/google-chrome-stable --enable-wayland-ime --wayland-text-input-version=1 %U
 StartupNotify=true
 Terminal=false
 Icon=google-chrome
@@ -169,7 +169,7 @@ Name[vi]=Cửa sổ Mới
 Name[zh_CN]=新建窗口
 Name[zh_TW]=開新視窗
 StartupWMClass=Google-chrome
-Exec=proxy-ns /usr/bin/google-chrome-stable --enable-wayland-ime --wayland-text-input-version=1
+Exec=/usr/bin/google-chrome-stable --enable-wayland-ime --wayland-text-input-version=1
 
 [Desktop Action new-private-window]
 Name=New Incognito Window
