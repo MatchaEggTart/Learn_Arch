@@ -1,1 +1,1 @@
-paru -S opencode
+paru -S opencode openspec
