@@ -1,3 +1,4 @@
+sudo pacman -Syy xdg-desktop-portal-kde
 paru -Syy obs-studio
 mkdir -p $HOME/Videos/Record
 # paru -S obs-cmd
