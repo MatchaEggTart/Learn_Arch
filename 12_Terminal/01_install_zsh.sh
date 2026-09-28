@@ -1,1 +1,1 @@
-sudo pacman -S zsh
+sudo pacman -S zsh eza
