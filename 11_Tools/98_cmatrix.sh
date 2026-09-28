@@ -1,2 +1,2 @@
-sudo pacman -Syy cmatrix
-
+# sudo pacman -Syy cmatrix
+paru -S cmatrix-git
