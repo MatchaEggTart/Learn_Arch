@@ -2,5 +2,7 @@
 # sudo timedatectl set-local-rtc 1
 sudo timedatectl set-local-rtc true
 
+sudo timedatectl set-ntp true
+timedatectl
 # UTC的RTC
 # timedatectl set-local-rtc 0

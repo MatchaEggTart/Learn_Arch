@@ -4,6 +4,10 @@ patch:
     bindings:
       - { when: paging, accept: comma, send: Page_Up } # 候选词分页
       - { when: has_menu, accept: period, send: Page_Down } # 候选词分页
+      - { when: has_menu, accept: minus, send: Page_Up } # 候选词分页 - 上一页
+      - { when: has_menu, accept: equal, send: Page_Down } # 候选词分页 =/+ 下一页
+      - { when: always, toggle: traditionalization, accept: Control+Shift+F } # 切换简体繁体
+      
       # - { when: composing, accept: Control + x, send: clear }
       # - { when: always, accept: Control+x, toggle: ascii_mode }          # 切换中英
 

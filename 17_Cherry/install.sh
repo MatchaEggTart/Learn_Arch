@@ -21,7 +21,7 @@ if ! check_install fuse; then
 fi
 
 # 定义资源文件位置
-appimage_source="Cherry-Studio-1.9.4-x86_64.AppImage"
+appimage_source="Cherry-Studio-2.1.3-linux-x64.AppImage"
 # appimage_company="google"
 appimage_name="cherry-studio"
 desktop_file="${script_dir}/$appimage_name/cherry-studio.desktop"
@@ -96,4 +96,3 @@ fi
 #
 # # /opt/google/chatbox/Chatbox-1.9.3-x86_64.AppImage
 # # /opt/google/chatbox/icons/chatbox.png
-#
