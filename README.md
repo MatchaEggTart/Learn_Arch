@@ -1,3 +1,3 @@
-# Learn_Arch
+# arch-notes
 
 - Install Packages in ArchLinux
