@@ -1,1 +1,2 @@
-sudo pacman -S zsh eza
+sudo pacman -S zsh 
+mkdir -p ~/.cache/zsh
