@@ -14,14 +14,15 @@ check_install() {
   fi
 }
 
-# 检查并安装fuse
-if ! check_install fuse; then
-  echo "正在安装fuse..."
-  sudo pacman -S --noconfirm fuse
+# 检查并安装fuse2（AppImage 运行时需要 libfuse.so.2）
+if ! check_install fuse2; then
+  echo "正在安装fuse2..."
+  sudo pacman -S --noconfirm fuse2
 fi
 
 # 定义资源文件位置
-appimage_source="Cherry-Studio-2.1.3-linux-x64.AppImage"
+# AppImage 用通配匹配，版本号不写死，避免升级后找不到文件
+appimage_glob="Cherry-Studio-*-linux-x64.AppImage"
 # appimage_company="google"
 appimage_name="cherry-studio"
 desktop_file="${script_dir}/$appimage_name/cherry-studio.desktop"
@@ -32,18 +33,21 @@ icon_dir="$install_dir/icons/cherry-studio.png"
 
 # 查找AppImage文件
 find_appimage() {
-  # 在多个位置查找
+  # 在多个位置查找（通配匹配任意版本）
   local locations=(
-    "$script_dir/$appimage_source"     # 脚本所在目录
-    "$PWD/$appimage_source"            # 当前工作目录
-    "$HOME/Downloads/$appimage_source" # 用户下载目录
+    "$script_dir"     # 脚本所在目录
+    "$PWD"            # 当前工作目录
+    "$HOME/Downloads" # 用户下载目录
   )
 
-  for loc in "${locations[@]}"; do
-    if [[ -f "$loc" ]]; then
-      echo "$loc"
-      return 0
-    fi
+  local dir f
+  for dir in "${locations[@]}"; do
+    for f in "$dir"/$appimage_glob; do
+      if [[ -f "$f" ]]; then
+        echo "$f"
+        return 0
+      fi
+    done
   done
 
   return 1
@@ -73,7 +77,7 @@ if appimage_path=$(find_appimage); then
 
   echo "安装完成！桌面快捷方式已创建"
 else
-  echo "错误：未找到 $appimage_source 文件"
+  echo "错误：未找到匹配 $appimage_glob 的文件"
   echo "请将文件放置在以下位置之一："
   echo "1. 脚本所在目录 ($script_dir)"
   echo "2. 当前工作目录 ($PWD)"

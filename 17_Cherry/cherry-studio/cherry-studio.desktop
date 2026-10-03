@@ -4,6 +4,6 @@ Exec=@INSTALL_DIR@/@APPIMAGE_FILE@ %U --no-sandbox
 Icon=@ICON_PATH@
 Terminal=false
 Type=Application
-StartupWMClass=cherry-studio
+StartupWMClass=CherryStudio
 Comment=Cherry Studio
 Categories=Network;InstantMessaging;
